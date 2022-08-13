@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  notebook:
+    build: ./
+    image: jupyter-scipy-notebook
+    volumes:
+      - ./:/src
+    ports:
+      - "8888:8888"
